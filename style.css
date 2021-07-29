@@ -5,6 +5,17 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+body::-webkit-scrollbar {
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border-left: 3px solid black;
+    border-right: 2px solid black;
+    background: white;
+}
 header{
     position: relative;
     z-index: 1000000;
@@ -15,6 +26,11 @@ p {
 .logo {
     font-size: 35px;
     font-weight: 600;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
 }
 .navbar {
     position: fixed;
@@ -58,15 +74,15 @@ ul li a {
 
 .bgColor {
     transition: all 1s;
-    background-color: #e0e0e0;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     border-bottom: 1px solid #6f6c6c;
     padding-bottom: 0;
     padding-top: 0;
 }
 
 .bgColor a {
-    color: #000;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -133,9 +149,9 @@ ul li a {
 }*/
 slider {
     display: block;
-    width: 117%;
+    width: 117.2%;
     height: 100%;
-    background-color: #1f1f1f;
+    background-color: #000000;
     overflow: hidden;
     position: absolute;
 }
@@ -145,7 +161,7 @@ slider > * {
     display: block;
     width: 100%;
     height: 100%;
-    background: #1f1f1f;
+    background: #000000;
     animation: slide 12s infinite;
     overflow: hidden;
 }
@@ -263,6 +279,18 @@ slide p {
 .sec1 {
     padding: 100px 0;
     background: #000;
+}
+
+.sec1 h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    color: #fff;
+    text-align: center;
+    font-size: calc(1.375rem + 1.5vw);
+    color: #fff;
+    text-align: center;
+    margin-top: -60px;
+    margin-bottom: 47px;
+    text-transform: uppercase;
 }
 
 .headerText {
@@ -605,5 +633,57 @@ div.image {max-width: 256px;max-height: 256px;background-image: url(data:image/s
 
     .navbar :checked ~ ul {
         bottom: 0;
+        top: 145px;
     }
+
+    .main h1 {
+        font-size: 3rem;
+    }
+
+    .sec1    .imgcv {
+        padding: 0px;
+        width: 97%;
+        margin-left: 3px;
+    }
+
+    .contentBox h1 {
+        font-size: 3rem;
+    }
+    .sec2 {
+        position: relative;
+        background: url(starry-night.jpg);
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .marquee {
+        width: 100%;
+        background-color: #000;
+        text-transform: uppercase;
+        color: aliceblue;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-bottom: -663px;
+        z-index: 1000000;
+        position: absolute;
+        height: 25px;
+    }
+    
+    .marquee div {
+        font-size: 20px;
+        animation: animate 10s linear infinite;
+        padding-left: 100%;
+        display: inline-block;
+        position: bottom !important;
+    }
+    slider {
+        display: block;
+        width: 106%;
+        height: 100%;
+        background-color: #1f1f1f;
+        overflow: hidden;
+        position: absolute;
+    }
+
 }
