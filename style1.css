@@ -6,7 +6,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-
 body::-webkit-scrollbar {
     background-color:  rgb(0, 0, 0);
 }
@@ -68,10 +67,7 @@ ul li a {
     font-weight: 500;
     transition: .5s;
 }
-img, svg {
-    vertical-align: middle;
-    margin: 21px;
-}
+
 .navbar ul li a:hover {
     background: #fff;
     color: #000;
@@ -158,7 +154,7 @@ img, svg {
 }*/
 slider {
     display: block;
-    width: 120.4%;
+    width: 117.2%;
     height: 100%;
     background-color: #000000;
     overflow: hidden;
@@ -226,7 +222,7 @@ slide p {
 .sli:before,
 .banner:before,
 .sec2:before,
-.contact:before {
+.contact:before{
     content:'';
     position:absolute;
     top: 0;
@@ -279,6 +275,11 @@ slide p {
     text-transform: uppercase;
     font-size: 5rem;
 }
+img, svg {
+    vertical-align: middle;
+    margin: 21px;
+}
+
 
 .contentBox p {
     color: #fff;
@@ -378,7 +379,7 @@ slide p {
 
 .sec2 {
     position: relative;
-    background: url(Fondo\ PORFOLIO.jpg);
+    background: url(starry-night.jpg);
     background-size: contain;
     height: 100vh;
     overflow: hidden;
@@ -453,7 +454,7 @@ slide p {
 .contact {
     position: relative;
     padding: 100px 0;
-    background: url(pexels-bryan-geraldo-586414.jpg);
+    background: url(street-lamp.jpg);
     background-size: cover;
     min-height: 100vh;
 }
@@ -492,16 +493,16 @@ slide p {
 
 footer {
     background: #000;
-    padding: 50px 0 0;
+    padding: 100px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .sci {
-    margin-top: -99px;
-    margin-left: -1022px;
-    margin-right: 317px;
+    margin-top: -94px;
+    margin-left: -346px;
+    margin-right: 463px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -559,7 +560,7 @@ div.image {max-width: 256px;max-height: 256px;background-image: url(data:image/s
 
 .marquee div {
     font-size: 20px;
-    animation: animate 15s linear infinite;
+    animation: animate 10s linear infinite;
     padding-left: 100%;
     display: inline-block;
     position: bottom !important;
@@ -591,6 +592,54 @@ div.image {max-width: 256px;max-height: 256px;background-image: url(data:image/s
     border-radius: 3px;
     z-index: 220000;
     transition: all .3s ease-in-out;
+}
+
+.projectt{
+    background: url(project-background01.jpg);
+    background-size: cover;
+    z-index: -10000;
+    color: #fff;
+}
+
+.projectt .contentt {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 60px;
+    margin: 40px 67px;
+    padding-left: 94px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    width: 86pc;
+}
+.imgBx img {
+    width: 300px;
+    height: 400px;
+    
+}
+.projectt h2 {
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.projectt p {
+    text-align: center;
+}
+
+.textBx {
+    margin-top: -90px;
+    margin-bottom: 105px;
+    margin-left: 21px;
+    background: rgb(0 0 0 / 42%);
+    width: 174px;
+    position: absolute;
+    padding-bottom: 0px;
 }
 
 @media screen and (max-width: 768px) {
